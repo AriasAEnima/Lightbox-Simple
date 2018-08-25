@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="lbox.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div id="staticimage">
+	<img src="img/gato1.jpg"   onclick="openModal()" class="hover-shadow cursor">
+</div>
+
+ 
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides" id="principal">      
+      <img src="img/gato1.jpg" style="width:100%">
+    </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="lbox.js"></script>
+
+</body>
+</html>
